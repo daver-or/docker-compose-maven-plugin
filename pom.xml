@@ -5,25 +5,26 @@
 
     <groupId>com.dkanejs.maven.plugins</groupId>
     <artifactId>docker-compose-maven-plugin</artifactId>
-    <version>4.0.0</version>
+    <version>4.0.1</version>
 
     <packaging>maven-plugin</packaging>
 
     <name>Docker Compose Maven Plugin</name>
     <description>Maven plugin for docker-compose</description>
-    <url>https://github.com/dkanejs/docker-compose-maven-plugin</url>
-
-    <organization>
-        <name>dkanejs</name>
-        <url>https://github.com/dkanejs</url>
-    </organization>
+    <url>https://github.com/dave-or/docker-compose-maven-plugin</url>
 
     <developers>
         <developer>
             <name>David Kane</name>
             <email>dkanejs@gmail.com</email>
             <roles>
-                <role>Lead Developer</role>
+                <role>Lead Developer &amp; Original Author</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Dave Robertson</name>
+            <roles>
+                <role>Contributor</role>
             </roles>
         </developer>
     </developers>
@@ -39,10 +40,10 @@
     <inceptionYear>2020</inceptionYear>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com:dkanejs/docker-compose-maven-plugin.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:dkanejs/docker-compose-maven-plugin.git</developerConnection>
+        <connection>scm:git:ssh://git@github.com:dave-or/docker-compose-maven-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:dave-or/docker-compose-maven-plugin.git</developerConnection>
         <tag>HEAD</tag>
-        <url>https://github.com/dkanejs/docker-compose-maven-plugin.git</url>
+        <url>https://github.com/dave-or/docker-compose-maven-plugin.git</url>
     </scm>
 
     <distributionManagement>
@@ -79,7 +80,7 @@
 
     <build>
         <plugins>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.ec4j.maven</groupId>
                 <artifactId>editorconfig-maven-plugin</artifactId>
                 <version>0.0.10</version>
@@ -92,7 +93,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-plugin-plugin</artifactId>

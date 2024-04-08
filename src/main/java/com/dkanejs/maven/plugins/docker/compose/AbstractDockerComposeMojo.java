@@ -199,7 +199,8 @@ abstract class AbstractDockerComposeMojo extends AbstractMojo {
 
         final List<String> cmd = new ArrayList<>();
 
-        cmd.add("docker-compose");
+        cmd.addAll(List.of("docker", "compose"));
+        cmd.add("compose");
 
         composeFilePaths.forEach(composeFilePath -> {
             cmd.add("-f");
